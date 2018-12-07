@@ -13,7 +13,7 @@ catkin_package(
   CATKIN_DEPENDS bond roscpp smclib
   DEPENDS Boost
 )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 add_library(${PROJECT_NAME}
   src/timeout.cpp
   src/bond.cpp

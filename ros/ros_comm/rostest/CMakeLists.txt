@@ -5,7 +5,7 @@ find_package(catkin COMPONENTS rosunit)
 find_package(Boost COMPONENTS system thread)
 
 include_directories(include ${Boost_INCLUDE_DIRS})
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(DEPENDS Boost
   INCLUDE_DIRS include
   CFG_EXTRAS ${PROJECT_NAME}-extras.cmake

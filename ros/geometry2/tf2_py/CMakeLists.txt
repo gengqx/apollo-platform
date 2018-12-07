@@ -41,7 +41,7 @@ catkin_python_setup()
 #   DEPENDENCIES
 #   std_msgs  # Or other packages containing msgs
 # )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 ###################################
 ## catkin specific configuration ##
 ###################################

@@ -4,7 +4,7 @@ find_package(catkin REQUIRED)
 catkin_package()
 
 catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 # logging config file goes in both etc and package layout (for now).
 # want to get rid of package layout copy, but need to be able to
 # locate etc first.

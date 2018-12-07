@@ -20,7 +20,7 @@ catkin_package(
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 # Build libimage_transport
 add_library(${PROJECT_NAME}
   src/camera_common.cpp

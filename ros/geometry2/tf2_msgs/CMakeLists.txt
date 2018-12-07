@@ -11,7 +11,7 @@ add_action_files(DIRECTORY action FILES LookupTransform.action)
 generate_messages(
   DEPENDENCIES actionlib_msgs std_msgs geometry_msgs
 )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(
    INCLUDE_DIRS include
    CATKIN_DEPENDS message_generation geometry_msgs actionlib_msgs)

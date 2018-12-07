@@ -4,7 +4,7 @@ find_package(catkin REQUIRED)
 catkin_package()
 
 catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 if(CATKIN_ENABLE_TESTING)
   find_package(rostest)
   add_rostest(test/rosnode.test)

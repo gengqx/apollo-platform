@@ -20,7 +20,7 @@ add_proto_files(
   DIRECTORY proto
   FILES chatter.proto
 )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 ## Generate added messages and services with any dependencies listed here
 generate_messages(DEPENDENCIES pb_msgs std_msgs)
 

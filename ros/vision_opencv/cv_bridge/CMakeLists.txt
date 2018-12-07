@@ -14,7 +14,7 @@ else()
 find_package(Boost REQUIRED)
 endif()
 find_package(OpenCV REQUIRED)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}

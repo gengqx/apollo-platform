@@ -4,7 +4,7 @@ project(pb_msgs)
 find_package(catkin REQUIRED COMPONENTS genmsg gencpp genpy)
 
 # catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 add_proto_files(
     DIRECTORY proto
     FILES

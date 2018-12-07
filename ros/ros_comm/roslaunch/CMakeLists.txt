@@ -10,7 +10,7 @@ else()
 endif()
 
 catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 install(FILES resources/roscore.xml
   DESTINATION ${CATKIN_GLOBAL_ETC_DESTINATION}/ros)
 

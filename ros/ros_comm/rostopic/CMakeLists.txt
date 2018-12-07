@@ -4,7 +4,7 @@ find_package(catkin REQUIRED)
 catkin_package()
 
 catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_install_python(PROGRAMS scripts/rostopic
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 

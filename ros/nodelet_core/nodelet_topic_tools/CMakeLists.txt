@@ -5,7 +5,7 @@ find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure)
 find_package(Boost REQUIRED thread)
 
 generate_dynamic_reconfigure_options(cfg/NodeletThrottle.cfg)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS dynamic_reconfigure message_filters nodelet pluginlib roscpp

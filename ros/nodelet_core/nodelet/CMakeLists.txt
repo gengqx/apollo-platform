@@ -22,7 +22,7 @@ catkin_package(
   CATKIN_DEPENDS bondcpp message_runtime pluginlib rosconsole roscpp std_msgs
   DEPENDS Boost
 )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 include_directories(include ${catkin_INCLUDE_DIRS} ${BOOST_INCLUDE_DIRS})
 
 # Debug only, collects stats on how callbacks are doled out to worker threads

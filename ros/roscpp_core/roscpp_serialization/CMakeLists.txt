@@ -6,7 +6,7 @@ catkin_package(
   LIBRARIES roscpp_serialization
   CATKIN_DEPENDS cpp_common roscpp_traits rostime
 )
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 include_directories(include ${catkin_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS})
 

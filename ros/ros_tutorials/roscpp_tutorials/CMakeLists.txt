@@ -19,7 +19,7 @@ macro(rostutorial T)
   install(TARGETS ${T}
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 endmacro()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 foreach(dir
     listener
     notify_connect

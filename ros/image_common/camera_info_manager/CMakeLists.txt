@@ -12,7 +12,7 @@ catkin_package(INCLUDE_DIRS include
 
 include_directories(${catkin_INCLUDE_DIRS})
 include_directories(include)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 # add a library
 add_library(${PROJECT_NAME} src/camera_info_manager.cpp)
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})

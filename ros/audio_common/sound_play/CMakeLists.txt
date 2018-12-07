@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS message_generation roscpp actionlib_msgs
 
 add_action_files(DIRECTORY action FILES SoundRequest.action)
 add_message_files(DIRECTORY msg FILES SoundRequest.msg)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 catkin_python_setup()

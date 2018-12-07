@@ -15,7 +15,7 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${console_bridge_INCLUDE_DIRS
 include_directories (src/bt) 
 
 # export user definitions
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 #CPP Libraries
 add_library(tf2 src/cache.cpp src/buffer_core.cpp src/static_cache.cpp)
 target_link_libraries(tf2 ${Boost_LIBRARIES} ${catkin_LIBRARIES} ${console_bridge_LIBRARIES})

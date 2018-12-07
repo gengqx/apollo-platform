@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp audio_common_msgs)
 
 find_package(PkgConfig)
 pkg_check_modules(GST gstreamer-0.10 REQUIRED)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 find_package(Boost REQUIRED COMPONENTS thread)
 
 include_directories(${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS} ${GST_INCLUDE_DIRS})

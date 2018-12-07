@@ -3,7 +3,7 @@ project(rospy)
 find_package(catkin REQUIRED)
 catkin_package()
 catkin_python_setup()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 # install legacy infrastructure needed by rosbuild
 install(FILES rosbuild/rospy.cmake
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/rosbuild)

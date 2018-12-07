@@ -8,7 +8,7 @@ endif()
 find_package(catkin REQUIRED COMPONENTS roscpp rosgraph_msgs)
 
 catkin_package()
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(rosout rosout.cpp)

@@ -14,7 +14,7 @@ include(CheckFunctionExists)
 include(CheckCXXSourceCompiles)
 
 include_directories(include ${Boost_INCLUDE_DIRS} ${console_bridge_INCLUDE_DIRS})
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 # execinfo.h is needed for backtrace on glibc systems
 CHECK_INCLUDE_FILE(execinfo.h HAVE_EXECINFO_H)
 if(HAVE_EXECINFO_H)

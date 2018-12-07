@@ -4,7 +4,7 @@ find_package(catkin REQUIRED)
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS cpp_common rostime)
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 install(DIRECTORY include/
   DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
   FILES_MATCHING PATTERN "*.h")

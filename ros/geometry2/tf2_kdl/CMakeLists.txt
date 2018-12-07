@@ -11,7 +11,7 @@ catkin_package(
   DEPENDS Eigen orocos_kdl
 )
 
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_python_setup()
 link_directories(${orocos_kdl_LIBRARY_DIRS})
 

@@ -7,7 +7,7 @@ find_package(Boost COMPONENTS thread REQUIRED)
 
 # Issue #53
 find_library(KDL_LIBRARY REQUIRED NAMES orocos-kdl HINTS ${orocos_kdl_LIBRARY_DIRS})
-
+set(CMAKE_CXX_FLAGS "-g -std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(
    LIBRARIES ${KDL_LIBRARY}
    INCLUDE_DIRS include
