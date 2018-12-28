@@ -11,7 +11,7 @@ CURRENT_PATH=`pwd`
 
 MACHINE_ARCH="$(uname -m)"
 
-INSTALL_PATH="${CURRENT_PATH}/install/ros_$MACHINE_ARCH"
+INSTALL_PATH="/home/tmp/ros"
 FASTRTPS_PATH="${CURRENT_PATH}/third_party/fast-rtps"
 TP_LIB_PATH="${CURRENT_PATH}/third_party/lib"
 
